@@ -1,0 +1,46 @@
+❯ python3 red_ball_tracker.py
+
+**********************************************************
+****Red Ball Tracking with Camera Gimbal and Chassis****
+**********************************************************
+----------------------------------------------------------
+Official website: https://www.hiwonder.com
+----------------------------------------------------------
+This script tracks a red ball using:
+  - Camera gimbal (PWM servos 1 & 2)
+  - 4-wheel DC motors for robot movement
+  - PID control for smooth tracking
+
+Controls:
+  - Press 'q' in the video window to quit
+  - Press Ctrl+C in terminal to stop
+----------------------------------------------------------
+
+Connecting to robot controller...
+[ WARN:0@1.564] global ./modules/videoio/src/cap_gstreamer.cpp (2401) handleMessage OpenCV | GStreamer warning: Embedded video playback halted; module v4l2src0 reported: Device '/dev/video0' is busy
+[ WARN:0@1.564] global ./modules/videoio/src/cap_gstreamer.cpp (1356) open OpenCV | GStreamer warning: unable to start pipeline
+[ WARN:0@1.564] global ./modules/videoio/src/cap_gstreamer.cpp (862) isPipelinePlaying OpenCV | GStreamer warning: GStreamer: pipeline have not been created
+[ WARN:0@1.564] global ./modules/videoio/src/cap_v4l.cpp (902) open VIDEOIO(V4L2:/dev/video0): can't open camera by index
+Red Ball Tracker initialized!
+- Camera resolution: 640x480
+- Processing resolution: 320x240
+- Press 'q' to quit
+
+Starting red ball tracking...
+Tracking parameters:
+  - Minimum ball radius: 10 pixels
+  - Target ball radius: 80 pixels
+  - Servo deadzone: 15 pixels
+  - Chassis deadzone: 20 pixels
+
+QSocketNotifier: Can only be used with threads started with QThread
+QStandardPaths: wrong permissions on runtime directory /run/user/1000, 0770 instead of 0700
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+libpng warning: iCCP: known incorrect sRGB profile
+Failed to capture frame from camera
+Cleaning up...
+Cleanup complete
+
